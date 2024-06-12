@@ -19,7 +19,7 @@ const VectorLayerPage = () => {
   const createTextStyle = (feature) => {
     return new Text({
       text: feature.get('vname'),
-      font: '12px Calibri,sans-serif',
+      font: '10px Calibri,sans-serif',
       fill: new Fill({ color: '#000' }),
       stroke: new Stroke({ color: '#fff', width: 3 }),
       overflow: true,
@@ -71,7 +71,7 @@ const VectorLayerPage = () => {
             ],
             view: new View({
               center: [0, 0],
-              zoom: 2,
+              zoom: 8,
             }),
           });
 
